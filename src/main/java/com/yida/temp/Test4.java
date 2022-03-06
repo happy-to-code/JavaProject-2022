@@ -3,6 +3,7 @@ package com.yida.temp;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Test4 {
@@ -15,8 +16,15 @@ public class Test4 {
 
         System.out.println("persons = " + persons);
 
-        List<String> names = persons.stream().map(Person::getName).sorted().collect(Collectors.toList());
-        System.out.println("names = " + names);
+        List<Integer> ages = persons.stream().map(Person::getAge).sorted().collect(Collectors.toList());
+        System.out.println("ages = " + ages);
+        Optional<Integer> max = ages.stream().max(Integer::compareTo);
+        System.out.println(max.isPresent());
+        System.out.println("max.get() = " + max.get());
+
+
+        int sum = persons.stream().map(p -> p.getAge()).reduce(0, (a, b) -> a + b);
+        System.out.println("sum = " + sum);
     }
 }
 
