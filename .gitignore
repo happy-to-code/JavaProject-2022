@@ -1,2 +1,19 @@
-target
-.idea
+target/
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# temp file
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
