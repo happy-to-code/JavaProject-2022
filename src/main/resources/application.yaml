@@ -1,2 +1,13 @@
 server:
-  port: 80
+  port: 8090
+
+
+dict:
+  ignores:
+    - sys_user_sex
+    - sys_show_hide
+    - sys_normal_disable
+  ages:
+    - 17
+    - 18
+  name: "xiaoming"

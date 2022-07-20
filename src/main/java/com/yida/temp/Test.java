@@ -11,11 +11,11 @@ public class Test {
         List<String> arr = new ArrayList<>(10);
         arr.addAll(Arrays.asList("1", "aa"));
         System.out.println("arr = " + arr);
-        Object[] objects = arr.toArray(String[]::new);
-        System.out.println("objects = " + objects);
-        for (Object object : objects) {
-            System.out.println(object);
-        }
+        // Object[] objects = arr.toArray(String[]::new);
+        // System.out.println("objects = " + objects);
+        // for (Object object : objects) {
+        //     System.out.println(object);
+        // }
     }
 }
 

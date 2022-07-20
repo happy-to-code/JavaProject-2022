@@ -9,4 +9,11 @@ public class CategoryModel {
     private Long parentId;
     private String name;
     private Integer level;
+
+
+
+    public CategoryModel changeName(CategoryModel cm){
+        cm.setName(cm.getName()+"123");
+        return cm;
+    }
 }

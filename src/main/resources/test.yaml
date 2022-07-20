@@ -1,0 +1,5 @@
+dict:
+  ignores:
+    - sys_user_sex
+    - sys_show_hide
+    - sys_normal_disable
